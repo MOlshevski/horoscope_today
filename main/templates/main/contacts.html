@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Контакты</h1>
+    <p>
+        <button>
+            <img src="{% static 'main/img/github.png' %}" alt="github" width="20" height="20">
+            <span class="arias">Проект на </span>
+            <a href="https://github.com/MOlshevski" class="btn btn-outline-dark">Github</a>
+        </button>
+    </p>
+</div>
+{% endblock %}

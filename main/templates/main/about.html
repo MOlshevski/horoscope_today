@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Про нас{% endblock %}
+
+{% block content %}
+<div class="about">
+    <h1>Про нас</h1>
+    <p>
+        <button>
+            <img src="{% static 'main/img/wiki.png' %}" alt="github" width="20" height="20">
+            <span class="arias">Статья о нас на </span>
+            <a href="https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF" class="btn btn-outline-dark">Wikipedia</a>
+        </button>
+    </p>
+
+</div>
+{% endblock %}

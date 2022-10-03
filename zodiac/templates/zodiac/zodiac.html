@@ -1,0 +1,73 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Гороскоп на сегодня{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>{{title}}</h1>
+    {% for i in predictions %}
+        <div class="allert allert-warningb">
+            <h3>{{ i.sign }}</h3>
+            <p>{{ i.horoscope_text }}</p>
+        </div>
+    {% endfor %}
+    <p>Выберите Ваш знак зодиака</p>
+    <body>
+    <p>
+        <button>
+            <img src="{% static 'zodiac/img/arias.png' %}" alt="arias" width="20" height="20">
+            <span class="arias">{{values.0}}</span>
+        </button>
+        <button>
+            <img src="{% static 'zodiac/img/taurus.png' %}" alt="taurus" width="20" height="20">
+            <span class="taurus">{{values.1}}</span>
+        </button>
+        <button>
+            <img src="{% static 'zodiac/img/gemini.png' %}" alt="gemini" width="20" height="20">
+            <span class="gemini">{{values.2}}</span>
+        </button>
+        <button>
+            <img src="{% static 'zodiac/img/cancer.png' %}" alt="cancer" width="20" height="20">
+            <span class="cancer">{{values.3}}</span>
+        </button>
+    </p>
+    <p>
+        <button>
+            <img src="{% static 'zodiac/img/leo.png' %}" alt="leo" width="20" height="20">
+            <span class="leo">{{values.4}}</span>
+        </button>
+        <button>
+            <img src="{% static 'zodiac/img/virgo.png' %}" alt="virgo" width="20" height="20">
+            <span class="virgo">{{values.5}}</span>
+        </button>
+        <button>
+            <img src="{% static 'zodiac/img/libra.png' %}" alt="libra" width="15" height="15">
+            <span class="libra">{{values.6}}</span>
+        </button>
+        <button>
+            <img src="{% static 'zodiac/img/scorpius.png' %}" alt="scorpius" width="20" height="20">
+            <span class="scorpius">{{values.7}}</span>
+        </button>
+    </p>
+    <p>
+        <button>
+            <img src="{% static 'zodiac/img/sagittarius.png' %}" alt="sagittarius" width="20" height="20">
+            <span class="sagittarius">{{values.8}}</span>
+        </button>
+        <button>
+            <img src="{% static 'zodiac/img/capricornus.png' %}" alt="capricornus" width="20" height="20">
+            <span class="capricornus">{{values.9}}</span>
+        </button>
+        <button>
+            <img src="{% static 'zodiac/img/aquarius.png' %}" alt="aquarius" width="20" height="20">
+            <span class="aquarius">{{values.10}}</span>
+        </button>
+        <button>
+            <img src="{% static 'zodiac/img/pisces.png' %}" alt="pisces" width="20" height="20">
+            <span class="pisces">{{values.11}}</span>
+        </button>
+    </p>
+
+    </body>
+</div>
+{% endblock %}

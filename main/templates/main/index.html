@@ -1,0 +1,13 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>{{title}}</h1>
+    <p>Добро пожаловать на сайт "Гороскоп на сегодня". Над нашими гороскопами ежедневно трудятся лучшие
+        астрологи мира.</p>
+    <p>Сравните свою дату рождения с временем прибывания в знаке, чтобы выбрать свой.</p>
+    <img src="{% static 'main/img/zz.jpg' %}" alt="Dates" width="450" height="380">
+</div>
+{% endblock %}
