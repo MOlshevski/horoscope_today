@@ -66,8 +66,7 @@ def pisces(request):
     prediction = Horoscope.objects.all().order_by('-date')
     return render(request, 'zodiac/pisces.html', {'prediction': prediction})
 
-""" Создаю функцию для создания рандомного гороскопа для знаков зодиака, чтобы наполнить базу данных. 
-Функция принимает 1 аргумент - дату"""
+""" Создаю функцию для создания рандомного гороскопа для знаков зодиака, чтобы наполнить базу данных"""
 
 
 def random_prediction():
