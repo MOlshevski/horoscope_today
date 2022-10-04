@@ -4,70 +4,88 @@
 
 {% block content %}
 <div class="features">
-    <h1>{{title}}</h1>
-    {% for i in predictions %}
-        <div class="allert allert-warningb">
-            <h3>{{ i.sign }}</h3>
-            <p>{{ i.horoscope_text }}</p>
-        </div>
-    {% endfor %}
+    <h1>Гороскоп на сегодня</h1>
     <p>Выберите Ваш знак зодиака</p>
     <body>
     <p>
+    <form action="{% url 'arias' %}">
         <button>
             <img src="{% static 'zodiac/img/arias.png' %}" alt="arias" width="20" height="20">
-            <span class="arias">{{values.0}}</span>
+            <span class="arias">Овен</span>
         </button>
+    </form>
+    <form action="{% url 'taurus' %}">
         <button>
             <img src="{% static 'zodiac/img/taurus.png' %}" alt="taurus" width="20" height="20">
-            <span class="taurus">{{values.1}}</span>
+            <span class="taurus">Телец</span>
         </button>
+    </form>
+    <form action="{% url 'gemini' %}">
         <button>
             <img src="{% static 'zodiac/img/gemini.png' %}" alt="gemini" width="20" height="20">
-            <span class="gemini">{{values.2}}</span>
+            <span class="gemini">Близнецы</span>
         </button>
+    </form>
+    <form action="{% url 'cancer' %}">
         <button>
             <img src="{% static 'zodiac/img/cancer.png' %}" alt="cancer" width="20" height="20">
-            <span class="cancer">{{values.3}}</span>
+            <span class="cancer">Рак</span>
         </button>
+    </form>
     </p>
     <p>
+    <form action="{% url 'leo' %}">
         <button>
             <img src="{% static 'zodiac/img/leo.png' %}" alt="leo" width="20" height="20">
-            <span class="leo">{{values.4}}</span>
+            <span class="leo">Лев</span>
         </button>
+    </form>
+    <form action="{% url 'virgo' %}">
         <button>
             <img src="{% static 'zodiac/img/virgo.png' %}" alt="virgo" width="20" height="20">
-            <span class="virgo">{{values.5}}</span>
+            <span class="virgo">Дева</span>
         </button>
+    </form>
+    <form action="{% url 'libra' %}">
         <button>
             <img src="{% static 'zodiac/img/libra.png' %}" alt="libra" width="15" height="15">
-            <span class="libra">{{values.6}}</span>
+            <span class="libra">Весы</span>
         </button>
+    </form>
+    <form action="{% url 'scorpius' %}">
         <button>
             <img src="{% static 'zodiac/img/scorpius.png' %}" alt="scorpius" width="20" height="20">
-            <span class="scorpius">{{values.7}}</span>
+            <span class="scorpius">Скорпион</span>
         </button>
+    </form>
     </p>
     <p>
+    <form action="{% url 'sagittarius' %}">
         <button>
             <img src="{% static 'zodiac/img/sagittarius.png' %}" alt="sagittarius" width="20" height="20">
-            <span class="sagittarius">{{values.8}}</span>
+            <span class="sagittarius">Стрелец</span>
         </button>
+    </form>
+    <form action="{% url 'capricornus' %}">
         <button>
             <img src="{% static 'zodiac/img/capricornus.png' %}" alt="capricornus" width="20" height="20">
-            <span class="capricornus">{{values.9}}</span>
+            <span class="capricornus">Козерог</span>
         </button>
+    </form>
+    <form action="{% url 'aquarius' %}">
         <button>
             <img src="{% static 'zodiac/img/aquarius.png' %}" alt="aquarius" width="20" height="20">
-            <span class="aquarius">{{values.10}}</span>
+            <span class="aquarius">Водолей</span>
         </button>
+    </form>
+    <form action="{% url 'pisces' %}">
         <button>
-            <img src="{% static 'zodiac/img/pisces.png' %}" alt="pisces" width="20" height="20">
-            <span class="pisces">{{values.11}}</span>
-        </button>
-    </p>
 
+            <img src="{% static 'zodiac/img/pisces.png' %}" alt="pisces" width="20" height="20">
+            <span class="pisces">Рыбы</span>
+        </button>
+    </form>
+    </p>
     </body>
 </div>
 {% endblock %}

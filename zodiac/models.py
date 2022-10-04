@@ -7,7 +7,10 @@ class Horoscope(models.Model):
     date = models.DateField('Дата', max_length=15)
 
     def __str__(self):
-        return self.sign
+        return ' '.join([
+            self.sign,
+            self.horoscope_text
+            ])
 
     class Meta:
         verbose_name = 'Гороскопы'

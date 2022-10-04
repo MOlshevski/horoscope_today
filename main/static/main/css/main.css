@@ -99,3 +99,26 @@ button:hover span:after {
     opacity: 1;
     right: 0;
 }
+
+
+main .zodiacs {
+    float: left;
+    padding: 2%;
+    color: white;
+    margin-top: 50px;
+    text-align: left;
+    width: 80%;
+}
+
+main .prediction{
+    float: left;
+    padding: 2%;
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+form {
+    display: inline;
+}
